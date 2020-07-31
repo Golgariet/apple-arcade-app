@@ -1,0 +1,84 @@
+.nav-bar {
+    //background-color: $color-secondary;
+    grid-column: center-start / center-end;
+    padding-top: 4rem;
+    //padding-bottom: 1rem;
+    display: grid;
+
+
+}
+
+.row {
+    display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    gap: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: inherit;
+}
+
+.btn {
+    //align-self: start;
+    //text-align: center;
+}
+
+.search {
+
+    //background-color: $color-secondary;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    //flex: 0 0 40%;
+
+    &__input {
+        font-family: inherit;
+        font-size: to-upper-case($string: "Search Videogames");
+        color: $color-grey-bar-light-4;
+        background-color: $color-grey-bar-light-2;
+        border: none;
+        padding: 1.4rem 2rem;
+        border-radius: 100px;
+        width: 60%;
+        transition: all .2s;
+        margin-right: -3.25rem;
+
+        &:focus {
+
+            outline: none;
+            width: 70%;
+            background-color: $color-grey-bar-light-3;
+
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: $color-grey-bar-light-4;
+        }
+
+    }
+
+    &__input:focus+&__button {
+        background-color: $color-grey-bar-light-3;
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-grey-bar-light-2;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-primary;
+    }
+}

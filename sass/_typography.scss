@@ -1,0 +1,117 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
+    text-transform: uppercase;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.btn {
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    //padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+    //text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &__pad {
+        padding: 1.8rem 3rem;
+    }
+
+    &>* {
+        display: grid;
+        padding: 1.8rem 3rem;
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary-dark;
+
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
+
+
+
+    &__visible {}
+
+    &__invisible {
+        display: grid;
+        position: absolute;
+        //padding: 1.8rem 0rem;
+        left: 0;
+        top: -100%;
+        justify-content: center;
+    }
+
+}
+
+.margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-medium {
+    margin-bottom: 3rem;
+}
+
+.margin-bottom-large {
+    margin-bottom: 4rem;
+}
+
+.margin-bottom-huge {
+    margin-bottom: 8rem;
+}
