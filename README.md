@@ -7,7 +7,7 @@ Apple Arcade app - Fully implemented Single Page application (SPA) with awesome 
 In the project directory, you can run:
 
 ```bash
-npm start
+npm run start / live-server
 ```
 
 The page will reload if you make edits.
