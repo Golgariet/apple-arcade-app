@@ -1,8 +1,7 @@
-// filter buttons
+
 
 (function () {
   const filterBtn = document.querySelectorAll(".btns");
-  //console.log(filterBtn);
 
   filterBtn.forEach(function (btn) {
     btn.addEventListener("click", function (event) {
@@ -33,31 +32,21 @@
   });
 })();
 
-//Select all buttons
+
 
 (function () {
-  //target search box
 
   const search = document.getElementById("search-game");
 
   search.addEventListener("keyup", function () {
     let value = search.value.toLowerCase().trim();
 
-    //console.log(value);
+
     const changeValue = document.querySelector(".games");
     const items = document.querySelectorAll(".game");
 
     items.forEach(function (item) {
       let type = item.dataset.item;
-      //console.log(type);
-      // if (type.includes(value)) {
-      //   item.style.display = "grid";
-
-      //   changeValue.style.cssText =
-      //     "grid-template-columns: display:flex; width: 64%; ";
-      // } else {
-      //   item.style.display = "none";
-      // }
 
       let lengthValue = value.length;
       let match = type.slice(0, lengthValue);

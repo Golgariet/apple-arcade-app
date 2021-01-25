@@ -463,6 +463,10 @@ body {
   gap: 5rem;
   grid-template-columns: repeat(4, 1fr);
   justify-content: inherit; }
+  @media only screen and (max-width: 50em) {
+    .row {
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr); } }
 
 .search {
   padding-top: 3rem;
@@ -478,7 +482,7 @@ body {
     padding: 1.4rem 2rem;
     border-radius: 100px;
     width: 60%;
-    transition: all .2s;
+    transition: all 0.2s;
     margin-right: -3.25rem; }
     .search__input:focus {
       outline: none;
