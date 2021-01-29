@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Apple webstore",
   "main": "index.js",
+  "homepage": ".",
   "dependencies": {
     "devserver": "^0.2.5"
   },
